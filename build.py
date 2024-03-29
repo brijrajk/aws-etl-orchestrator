@@ -208,7 +208,7 @@ def createstack(* stacks, **kwargs):
 
         except Exception as e:
             print("Stack creation FAILED.")
-            print(e.message)
+            print(e)
 
 
 @task()

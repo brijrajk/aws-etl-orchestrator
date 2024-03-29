@@ -1,7 +1,7 @@
 [
   {
     "ParameterKey": "ArtifactBucketName",
-    "ParameterValue": "<NO-DEFAULT>"
+    "ParameterValue": "marketing-project-gluerunner-bucket"
   },
   {
     "ParameterKey": "LambdaSourceS3Key",

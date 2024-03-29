@@ -1,7 +1,7 @@
 [
   {
     "ParameterKey": "ArtifactBucketName",
-    "ParameterValue": "<NO-DEFAULT>"
+    "ParameterValue": "marketing-project-glue-resources-bucket"
   },
   {
     "ParameterKey": "ETLScriptsPrefix",
@@ -9,7 +9,7 @@
   },
   {
     "ParameterKey": "DataBucketName",
-    "ParameterValue": "<NO-DEFAULT>"
+    "ParameterValue": "marketing-project-data-bucket"
   },
   {
     "ParameterKey": "ETLOutputPrefix",

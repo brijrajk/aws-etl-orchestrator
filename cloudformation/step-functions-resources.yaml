@@ -75,7 +75,7 @@ Resources:
         - Effect: Allow
           Principal:
             Service:
-            - states.us-east-1.amazonaws.com
+            - states.ap-south-1.amazonaws.com
           Action:
           - sts:AssumeRole
       Policies:
@@ -315,7 +315,7 @@ Resources:
         S3Key: !Ref LambdaSourceS3Key
       Timeout: 180 #seconds
       MemorySize: 128 #MB
-      Runtime: python2.7
+      Runtime: python3.12
     DependsOn:
       - OnS3ObjectCreatedLambdaExecutionRole
 

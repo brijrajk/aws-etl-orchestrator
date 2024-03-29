@@ -1,7 +1,7 @@
 [
   {
     "ParameterKey": "ArtifactBucketName",
-    "ParameterValue": "<NO-DEFAULT>"
+    "ParameterValue": "marketing-project-athena-runner-bucket"
   },
   {
     "ParameterKey": "LambdaSourceS3Key",

@@ -60,7 +60,7 @@ def start_glue_jobs(config):
             )
 
         except Exception as e:
-            logger.critical(e.message)
+            logger.critical(e)
             logger.critical(
                 'Unrecoverable error invoking get_activity_task for {}.'.format(sfn_activity_arn))
             raise
@@ -119,7 +119,7 @@ def start_glue_jobs(config):
 
         except Exception as e:
             logger.error('Failed to start Glue job named "{}"..'.format(glue_job_name))
-            logger.error('Reason: {}'.format(e.message))
+            logger.error('Reason: {}'.format(e))
             logger.info('Sending "Task Failed" signal to Step Functions.')
 
             response = sfn.send_task_failure(
@@ -244,7 +244,7 @@ def check_glue_jobs(config):
         except Exception as e:
             logger.error('There was a problem checking status of Glue job "{}"..'.format(glue_job_name))
             logger.error('Glue job Run Id "{}"'.format(glue_job_run_id))
-            logger.error('Reason: {}'.format(e.message))
+            logger.error('Reason: {}'.format(e))
             logger.info('Checking next Glue job.')
 
 
@@ -276,6 +276,6 @@ def handler(event, context):
 
     except Exception as e:
         logger.critical('*** ERROR: Glue runner lambda function failed ***')
-        logger.critical(e.message)
+        logger.critical(e)
         raise
 

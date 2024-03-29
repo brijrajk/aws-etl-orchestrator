@@ -1,14 +1,14 @@
 {
   "athenarunner": {
-    "ArtifactBucketName": "<NO-DEFAULT>",
+    "ArtifactBucketName": "marketing-project-athena-runner-bucket",
     "LambdaSourceS3Key": "src/athenarunner.zip"
   },
   "gluerunner": {
-    "ArtifactBucketName": "<NO-DEFAULT>",
+    "ArtifactBucketName": "marketing-project-gluerunner-bucket",
     "LambdaSourceS3Key": "src/gluerunner.zip"
   },
   "ons3objectcreated": {
-    "ArtifactBucketName": "<NO-DEFAULT>",
+    "ArtifactBucketName": "marketing-project-step-function-bucket",
     "LambdaSourceS3Key": "src/ons3objectcreated.zip"
   }
 }
